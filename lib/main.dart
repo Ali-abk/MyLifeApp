@@ -10,9 +10,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: const Text('My Life App')),
-        body: const Center(child: Text('Hello from My Life App!')),
+        backgroundColor: Colors.blueAccent,
+        body: const Center(
+          child: Text(
+            'My Life App Is Working!',
+            style: TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+        ),
       ),
     );
   }
